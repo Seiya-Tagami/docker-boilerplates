@@ -5,7 +5,7 @@ FROM golang:${GO_VERSION}-alpine${ALPINE_VERSION}
 
 WORKDIR /app
 
-RUN apk add bash
+RUN apk update && apk add bash && apk add git
 
 RUN go install github.com/cosmtrek/air@latest
 
