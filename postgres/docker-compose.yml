@@ -1,0 +1,17 @@
+version: "3"
+services:
+  db:
+    build: 
+      context: .
+      dockerfile: docker/postgres/Dockerfile
+    ports:
+      - 5434:5432
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    restart: always
+    networks:
+      - example
+networks:
+  example:
