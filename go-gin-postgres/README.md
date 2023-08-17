@@ -1,4 +1,4 @@
-# Go と postgresql を Docker で構築する。
+# Go と postgresql を Docker で構築する。(整備中)
 
 ### 基本操作
 
